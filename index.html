@@ -1,529 +1,542 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080808">
-  <title>Joaquín Tomás Lobo — Software Developer</title>
-  <meta name="description" content="Portfolio de Joaquín Tomás Lobo. Desarrollo de software, aplicaciones de escritorio en C# / .NET, apps móviles y desarrollo web.">
-  <meta name="author" content="Joaquín Tomás Lobo">
-  <link rel="canonical" href="https://tomaslobotup.github.io/">
-
-  <!-- Open Graph / Meta Preview para Discord, WhatsApp, Twitter, LinkedIn -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:url" content="https://tomaslobotup.github.io/">
-  <meta property="og:title" content="Joaquín Tomás Lobo — Software Developer">
-  <meta property="og:description" content="Portfolio de Joaquín Tomás Lobo. Desarrollo de software, arquitectura en C#, aplicaciones de escritorio, apps móviles y web.">
-  <meta property="og:image" content="https://tomaslobotup.github.io/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Joaquín Tomás Lobo — Software Developer Portfolio">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://tomaslobotup.github.io/">
-  <meta name="twitter:title" content="Joaquín Tomás Lobo — Software Developer">
-  <meta name="twitter:description" content="Portfolio de Joaquín Tomás Lobo. Desarrollo de software, arquitectura en C#, aplicaciones de escritorio, apps móviles y web.">
-  <meta name="twitter:image" content="https://tomaslobotup.github.io/og.png">
-  
-  <!-- Favicon SVG moderno -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23101010'/><text x='16' y='21' font-family='monospace' font-weight='bold' font-size='14' fill='%23ededed' text-anchor='middle'>TL</text></svg>">
-  
-  <!-- Fuentes Google: Space Grotesk (Titulares/Cuerpo) & JetBrains Mono (Código/Detalles) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Estilos del portafolio -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- ==========================================
-       HEADER & BARRA DE NAVEGACIÓN
-       ========================================== -->
-  <header class="site-header">
-    <div class="header-inner container">
-      <a class="wordmark" href="#main" aria-label="Joaquín Tomás Lobo, inicio">
-        <span class="wordmark-badge"><span class="gradient-animated-text">tl</span><span class="wordmark-dot">.</span></span>
-        <span class="wordmark-name">Tomás Lobo</span>
-      </a>
-
-      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú de navegación">
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav id="primary-nav" aria-label="Navegación principal">
-        <a href="#about" data-nav="about">Sobre mí</a>
-        <a href="#education" data-nav="education">Formación</a>
-        <a href="#projects" data-nav="projects">Proyectos</a>
-        <a href="#contact" data-nav="contact">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- ==========================================
-         HERO SECTION
-         ========================================== -->
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-kicker mono" data-reveal>
-        <div class="hero-kicker-left">
-          <span class="status-dot"></span>
-          <span>DISPONIBLE PARA PROYECTOS & PASANTÍAS</span>
-        </div>
-        <span class="hero-edition">TUCUMÁN, AR / UTN</span>
-      </div>
-
-      <div class="hero-title-wrap">
-        <h1 id="hero-title" class="hero-title" data-reveal>
-          <span class="gradient-animated-text">Tomás</span><br>
-          <span class="gradient-animated-text">Lobo</span><span class="name-period">.</span>
-        </h1>
-
-        <!-- Emblema Orbital Técnico -->
-        <div class="engineering-mark" aria-hidden="true" data-reveal>
-          <div class="mark-orbit orbit-one"></div>
-          <div class="mark-orbit orbit-two"></div>
-          <div class="mark-orbit orbit-three"></div>
-          <div class="mark-core"><span class="gradient-animated-text">tl.</span></div>
-          <span class="mark-label mono">SYSTEM / CODE</span>
-          <span class="mark-cross cross-one">+</span>
-          <span class="mark-cross cross-two">+</span>
-        </div>
-      </div>
-
-      <div class="hero-bottom" data-reveal>
-        <div>
-          <p class="hero-focus">Software • Desktop • Apps Móviles • Web</p>
-          <p class="hero-intro">
-            Estudiante y futuro <strong>Técnico Universitario en Programación (UTN)</strong>. Apasionado por la arquitectura limpia, el desarrollo de sistemas robustos, aplicaciones de escritorio en C# y experiencias multiplataforma.
-          </p>
-        </div>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">
-            Ver proyectos
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a class="button button-secondary" href="#contact">
-            Contacto
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-footer" data-reveal>
-        <div class="social-links">
-          <a href="https://github.com/tomaslobotup" target="_blank" rel="noopener noreferrer">
-            GitHub
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="mailto:joaquintomaslobo@gmail.com">
-            joaquintomaslobo@gmail.com
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-
-        <div class="location-tag mono">
-          <span>ARGENTINA • TUCUMÁN (CAPITÁN CÁCERES)</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         01 / SOBRE MÍ & STACK
-         ========================================== -->
-    <section id="about" data-section class="container" aria-labelledby="about-title">
-      <p class="eyebrow" data-reveal><span class="section-number">01</span> / SOBRE MÍ</p>
-
-      <div class="section-grid">
-        <div>
-          <h2 id="about-title" class="section-title" data-reveal>
-            Construyendo soluciones,<br><span class="gradient-animated-text">desde la lógica a la interfaz.</span>
-          </h2>
-        </div>
-
-        <div>
-          <div class="about-text" data-reveal>
-            <p>
-              Soy <strong>Joaquín Tomás Lobo</strong>, estudiante de la Tecnicatura Universitaria en Programación en la <strong>Universidad Tecnológica Nacional (UTN)</strong>, viviendo en Capitán Cáceres, Tucumán.
-            </p>
-            <p>
-              Mi enfoque se centra en crear software confiable y bien estructurado. Me interesa tanto la <strong>lógica profunda</strong> (algoritmos, persistencia en bases de datos relacionales, procesamiento en segundo plano) como el desarrollo de <strong>interfaces funcionales y modernas</strong> en escritorio (C#/.NET/WPF), aplicaciones móviles y web.
-            </p>
-            <p>
-              Me gusta entender cómo funcionan los sistemas por dentro: desde la gestión de recursos en C/C++ hasta la reactividad moderna de TypeScript y el empaquetado nativo para Android.
-            </p>
-          </div>
-
-          <!-- Matriz de Habilidades -->
-          <div class="skills-matrix" data-reveal>
-            
-            <!-- Lenguajes & Backend -->
-            <div class="skill-category">
-              <div class="category-title">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-                LENGUAJES & NÚCLEO DEL SISTEMA
-              </div>
-              <div class="skill-pills">
-                <span class="skill-pill"><span class="pill-dot"></span>C# 12 (.NET 8)</span>
-                <span class="skill-pill"><span class="pill-dot"></span>C++</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Python</span>
-                <span class="skill-pill"><span class="pill-dot"></span>SQL (Bases de datos)</span>
-              </div>
-            </div>
-
-            <!-- Frontend & Móvil -->
-            <div class="skill-category">
-              <div class="category-title">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-                DESARROLLO WEB & MOBILE
-              </div>
-              <div class="skill-pills">
-                <span class="skill-pill"><span class="pill-dot"></span>HTML5 / CSS3</span>
-                <span class="skill-pill"><span class="pill-dot"></span>JavaScript / TypeScript</span>
-                <span class="skill-pill"><span class="pill-dot"></span>React 19</span>
-                <span class="skill-pill"><span class="pill-dot"></span>WPF (XAML)</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Capacitor (Android)</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Tailwind CSS</span>
-              </div>
-            </div>
-
-            <!-- Herramientas & Entornos -->
-            <div class="skill-category">
-              <div class="category-title">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                </svg>
-                HERRAMIENTAS & FLUJO DE TRABAJO
-              </div>
-              <div class="skill-pills">
-                <span class="skill-pill"><span class="pill-dot"></span>Git & GitHub</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Visual Studio Code</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Visual Studio Community</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Inno Setup</span>
-                <span class="skill-pill"><span class="pill-dot"></span>Android SDK / Gradle</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         02 / FORMACIÓN ACADÉMICA
-         ========================================== -->
-    <section id="education" data-section class="container" aria-labelledby="education-title">
-      <p class="eyebrow" data-reveal><span class="section-number">02</span> / FORMACIÓN ACADÉMICA</p>
-
-      <div class="section-grid">
-        <div>
-          <h2 id="education-title" class="section-title" data-reveal>
-            Formación técnica<br><span>universitaria continua.</span>
-          </h2>
-        </div>
-
-        <div class="timeline" data-reveal>
-          
-          <!-- UTN -->
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-title">Tecnicatura Universitaria en Programación</h3>
-              <span class="timeline-period">En curso</span>
-            </div>
-            <div class="timeline-institution">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-              </svg>
-              UTN — Universidad Tecnológica Nacional
-            </div>
-            <p class="timeline-description">
-              Formación integral y rigurosa en ingeniería de software, estructuras de datos avanzadas, algoritmia, programación orientada a objetos (POO), modelado relacional de bases de datos y desarrollo de sistemas.
-            </p>
-            <div class="timeline-highlights">
-              <div class="highlight-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Desarrollo en C#, C++, Python y SQL con enfoque en arquitectura y rendimiento.</span>
-              </div>
-              <div class="highlight-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Diseño de esquemas de bases de datos, normalización y consultas optimizadas.</span>
-              </div>
-              <div class="highlight-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Control de versiones colaborativo y buenas prácticas de desarrollo en Git.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Escuela Técnica N° 1 de Monteros -->
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3 class="timeline-title">Técnico en Informática Profesional y Personal</h3>
-              <span class="timeline-period">Graduado</span>
-            </div>
-            <div class="timeline-institution">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-              </svg>
-              Escuela Técnica N° 1 de Monteros
-            </div>
-            <p class="timeline-description">
-              Título secundario técnico con sólida base práctica y teórica en computación, lógica de programación, arquitectura de hardware, redes, sistemas operativos y soporte informático integral.
-            </p>
-            <div class="timeline-highlights">
-              <div class="highlight-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Fundamentos de lógica algorítmica, programación estructurada y resolución de problemas.</span>
-              </div>
-              <div class="highlight-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Arquitectura de computadoras, diagnóstico de hardware y mantenimiento de sistemas.</span>
-              </div>
-              <div class="highlight-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Configuración de redes de datos locales (LAN), seguridad informática y conectividad.</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         03 / PROYECTOS DESTACADOS
-         ========================================== -->
-    <section id="projects" data-section class="container" aria-labelledby="projects-title">
-      <p class="eyebrow" data-reveal><span class="section-number">03</span> / PROYECTOS</p>
-
-      <div class="section-grid">
-        <div>
-          <h2 id="projects-title" class="section-title" data-reveal>
-            Decisiones técnicas,<br><span>arquitectura y software real.</span>
-          </h2>
-        </div>
-
-        <div class="projects-list">
-
-          <!-- PROYECTO 1: BUSCAPP / Media Player & Downloader en C# -->
-          <article class="project-card" data-reveal>
-            <div class="project-top">
-              <div class="project-meta">
-                <span class="project-type">Software de Escritorio • Windows</span>
-                <h3 class="project-title">BUSCAPP (C# / .NET 8)</h3>
-              </div>
-              <span class="project-badge">Disponible en GitHub</span>
-            </div>
-
-            <p class="project-summary">
-              Aplicación de escritorio de alto rendimiento desarrollada en C# 12 y .NET 8 con interfaz moderna en WPF/XAML. Integra navegación web aislada mediante WebView2 (Chromium), extracción y descarga multimedia multihilo con yt-dlp, y procesamiento y conversión a audio MP3 de 320 kbps mediante multiplexación con FFmpeg.
-            </p>
-
-            <div class="project-architecture">
-              <div class="architecture-title">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-                Arquitectura & Detalles Técnicos
-              </div>
-              <div class="architecture-grid">
-                <div class="arch-item">
-                  <span class="arch-label">UI / UX</span>
-                  <span class="arch-desc">WPF con aceleración por hardware, animaciones Storyboard y soporte dinámico de temas claro/oscuro.</span>
-                </div>
-                <div class="arch-item">
-                  <span class="arch-label">Motor Web & Media</span>
-                  <span class="arch-desc">Microsoft WebView2 + backend yt-dlp y FFmpeg para stream multiplexing y SkiaSharp para gráficos.</span>
-                </div>
-                <div class="arch-item">
-                  <span class="arch-label">Persistencia & Packaging</span>
-                  <span class="arch-desc">Configuración en JSON de alta velocidad (System.Text.Json) e instalador x64 generado con Inno Setup 6.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-tech-tags">
-              <span class="tech-tag">C# 12</span>
-              <span class="tech-tag">.NET 8.0</span>
-              <span class="tech-tag">WPF (XAML)</span>
-              <span class="tech-tag">WebView2</span>
-              <span class="tech-tag">yt-dlp</span>
-              <span class="tech-tag">FFmpeg</span>
-              <span class="tech-tag">SkiaSharp</span>
-              <span class="tech-tag">Inno Setup</span>
-            </div>
-
-            <div class="project-links">
-              <a class="project-link" href="https://github.com/tomaslobotup/BUSCAPP" target="_blank" rel="noopener noreferrer">
-                Ver en GitHub
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- PROYECTO 2: LaminaFacil -->
-          <article class="project-card" data-reveal>
-            <div class="project-top">
-              <div class="project-meta">
-                <span class="project-type">App Móvil • Android & Web</span>
-                <h3 class="project-title">LaminaFacil</h3>
-              </div>
-              <span class="project-badge upcoming">Próximamente en Google Play</span>
-            </div>
-
-            <p class="project-summary">
-              Aplicación móvil orientada a la creación y diagramación de láminas escolares y posters de gran escala divididos en hojas A4 estándar. Cuenta con motor gráfico propio sobre HTML5 Canvas para corte de precisión con marcos y ensamble tipo Posteriza, y compilación nativa Android mediante Capacitor.
-            </p>
-
-            <div class="project-architecture">
-              <div class="architecture-title">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-                Arquitectura & Detalles Técnicos
-              </div>
-              <div class="architecture-grid">
-                <div class="arch-item">
-                  <span class="arch-label">Frontend & Motor Gráfico</span>
-                  <span class="arch-desc">React 19 tipado con TypeScript, Tailwind CSS y motor HTML5 Canvas para renderizar cortes e ingletes a 45°.</span>
-                </div>
-                <div class="arch-item">
-                  <span class="arch-label">Generación de Documentos</span>
-                  <span class="arch-desc">jsPDF para exportación vectorial multipágina con márgenes calibrados y guías visuales de corte.</span>
-                </div>
-                <div class="arch-item">
-                  <span class="arch-label">Ecosistema Android</span>
-                  <span class="arch-desc">Capacitor 8 (Filesystem & Share), compilación AAB con Gradle, OpenJDK 21 y firmado digital SHA-256 (Keytool).</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-tech-tags">
-              <span class="tech-tag">React 19</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Capacitor 8</span>
-              <span class="tech-tag">Android SDK</span>
-              <span class="tech-tag">HTML5 Canvas</span>
-              <span class="tech-tag">jsPDF</span>
-              <span class="tech-tag">Tailwind CSS</span>
-            </div>
-
-            <div class="project-links">
-              <span class="project-link secondary">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                Preparando lanzamiento en Play Store
-              </span>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         04 / CONTACTO
-         ========================================== -->
-    <section id="contact" data-section class="container contact-section" aria-labelledby="contact-title">
-      <p class="eyebrow" data-reveal><span class="section-number">04</span> / CONTACTO</p>
-
-      <div class="contact-card" data-reveal>
-        <div>
-          <h2 id="contact-title" class="contact-heading">
-            El siguiente proyecto<br>comienza con una<br><span class="gradient-animated-text">conversación.</span>
-          </h2>
-          <p class="contact-sub">
-            Estoy buscando oportunidades para sumar valor en proyectos de software, colaborar en equipo y seguir desarrollando soluciones tecnológicas.
-          </p>
-        </div>
-
-        <div class="contact-action-box">
-          <span class="mono" style="color: var(--text-dim);">¿HABLÁMOS?</span>
-          
-          <a class="contact-email-link" href="mailto:joaquintomaslobo@gmail.com">
-            joaquintomaslobo@gmail.com
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 18 18 6M6 6h12v12"/>
-            </svg>
-          </a>
-
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-            <a class="button button-primary" href="mailto:joaquintomaslobo@gmail.com">
-              Enviar correo
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 12h15m-6-6 6 6-6 6"/>
-              </svg>
-            </a>
-
-            <a class="button button-secondary" href="https://github.com/tomaslobotup" target="_blank" rel="noopener noreferrer">
-              Explorar GitHub
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 18 18 6M6 6h12v12"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ==========================================
-       FOOTER
-       ========================================== -->
-  <footer class="site-footer container">
-    <p class="footer-signature">© 2026 Joaquín Tomás Lobo — tl.</p>
-    <p style="color: var(--text-dim); font-size: 0.85rem;">Software bien diseñado, de punta a punta.</p>
-    <div class="social-links">
-      <a href="https://github.com/tomaslobotup" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="mailto:joaquintomaslobo@gmail.com">Email</a>
-    </div>
-  </footer>
-
-  <!-- Lógica e interactividad -->
-  <script src="main.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Joaquín Tomás Lobo — Software Developer</title>
+  <meta name="description" content="Portfolio de Joaquín Tomás Lobo. Desarrollo de software, aplicaciones de escritorio en C# / .NET, apps móviles y desarrollo web.">
+  <meta name="author" content="Joaquín Tomás Lobo">
+  <link rel="canonical" href="https://tomaslobotup.github.io/">
+
+  <!-- Open Graph / Meta Preview para Discord, WhatsApp, Twitter, LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://tomaslobotup.github.io/">
+  <meta property="og:title" content="Joaquín Tomás Lobo — Software Developer">
+  <meta property="og:description" content="Portfolio de Joaquín Tomás Lobo. Desarrollo de software, arquitectura en C#, aplicaciones de escritorio, apps móviles y web.">
+  <meta property="og:image" content="https://tomaslobotup.github.io/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Joaquín Tomás Lobo — Software Developer Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://tomaslobotup.github.io/">
+  <meta name="twitter:title" content="Joaquín Tomás Lobo — Software Developer">
+  <meta name="twitter:description" content="Portfolio de Joaquín Tomás Lobo. Desarrollo de software, arquitectura en C#, aplicaciones de escritorio, apps móviles y web.">
+  <meta name="twitter:image" content="https://tomaslobotup.github.io/og.png">
+  
+  <!-- Favicon SVG moderno -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23101010'/><text x='16' y='21' font-family='monospace' font-weight='bold' font-size='14' fill='%23ededed' text-anchor='middle'>TL</text></svg>">
+  
+  <!-- Fuentes Google: Space Grotesk (Titulares/Cuerpo) & JetBrains Mono (Código/Detalles) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos del portafolio -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & BARRA DE NAVEGACIÓN
+       ========================================== -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="#main" aria-label="Joaquín Tomás Lobo, inicio">
+        <span class="wordmark-badge"><span class="gradient-animated-text">tl</span><span class="wordmark-dot">.</span></span>
+        <span class="wordmark-name">Tomás Lobo</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Navegación principal">
+        <a href="#about" data-nav="about">Sobre mí</a>
+        <a href="#education" data-nav="education">Formación</a>
+        <a href="#projects" data-nav="projects">Proyectos</a>
+        <a href="#contact" data-nav="contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-kicker mono" data-reveal>
+        <div class="hero-kicker-left">
+          <span class="status-dot"></span>
+          <span>DISPONIBLE PARA PROYECTOS & PASANTÍAS</span>
+        </div>
+        <span class="hero-edition">TUCUMÁN, AR / UTN</span>
+      </div>
+
+      <div class="hero-title-wrap">
+        <h1 id="hero-title" class="hero-title" data-reveal>
+          <span class="gradient-animated-text">Tomás</span><br>
+          <span class="gradient-animated-text">Lobo</span><span class="name-period">.</span>
+        </h1>
+
+        <!-- Emblema Orbital Técnico -->
+        <div class="engineering-mark" aria-hidden="true" data-reveal>
+          <div class="mark-orbit orbit-one"></div>
+          <div class="mark-orbit orbit-two"></div>
+          <div class="mark-orbit orbit-three"></div>
+          <div class="mark-core"><span class="gradient-animated-text">tl.</span></div>
+          <span class="mark-label mono">SYSTEM / CODE</span>
+          <span class="mark-cross cross-one">+</span>
+          <span class="mark-cross cross-two">+</span>
+        </div>
+      </div>
+
+      <div class="hero-bottom" data-reveal>
+        <div>
+          <p class="hero-focus">Software • Desktop • Apps Móviles • Web</p>
+          <p class="hero-intro">
+            Estudiante y futuro <strong>Técnico Universitario en Programación (UTN)</strong>. Apasionado por la arquitectura limpia, el desarrollo de sistemas robustos, aplicaciones de escritorio en C# y experiencias multiplataforma.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Ver proyectos
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="button button-secondary" href="#contact">
+            Contacto
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-footer" data-reveal>
+        <div class="social-links">
+          <a href="https://github.com/tomaslobotup" target="_blank" rel="noopener noreferrer">
+            GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/joaquintomaslobo/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="mailto:joaquintomaslobo@gmail.com">
+            joaquintomaslobo@gmail.com
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="location-tag mono">
+          <span>ARGENTINA • TUCUMÁN (CAPITÁN CÁCERES)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         01 / SOBRE MÍ & STACK
+         ========================================== -->
+    <section id="about" data-section class="container" aria-labelledby="about-title">
+      <p class="eyebrow" data-reveal><span class="section-number">01</span> / SOBRE MÍ</p>
+
+      <div class="section-grid">
+        <div>
+          <h2 id="about-title" class="section-title" data-reveal>
+            Construyendo soluciones,<br><span class="gradient-animated-text">desde la lógica a la interfaz.</span>
+          </h2>
+        </div>
+
+        <div>
+          <div class="about-text" data-reveal>
+            <p>
+              Soy <strong>Joaquín Tomás Lobo</strong>, estudiante de la Tecnicatura Universitaria en Programación en la <strong>Universidad Tecnológica Nacional (UTN)</strong>, viviendo en Capitán Cáceres, Tucumán.
+            </p>
+            <p>
+              Mi enfoque se centra en crear software confiable y bien estructurado. Me interesa tanto la <strong>lógica profunda</strong> (algoritmos, persistencia en bases de datos relacionales, procesamiento en segundo plano) como el desarrollo de <strong>interfaces funcionales y modernas</strong> en escritorio (C#/.NET/WPF), aplicaciones móviles y web.
+            </p>
+            <p>
+              Me gusta entender cómo funcionan los sistemas por dentro: desde la gestión de recursos en C/C++ hasta la reactividad moderna de TypeScript y el empaquetado nativo para Android.
+            </p>
+          </div>
+
+          <!-- Matriz de Habilidades -->
+          <div class="skills-matrix" data-reveal>
+            
+            <!-- Lenguajes & Backend -->
+            <div class="skill-category">
+              <div class="category-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                LENGUAJES & NÚCLEO DEL SISTEMA
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><span class="pill-dot"></span>C# 12 (.NET 8)</span>
+                <span class="skill-pill"><span class="pill-dot"></span>C++</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Python</span>
+                <span class="skill-pill"><span class="pill-dot"></span>SQL (Bases de datos)</span>
+              </div>
+            </div>
+
+            <!-- Frontend & Móvil -->
+            <div class="skill-category">
+              <div class="category-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                DESARROLLO WEB & MOBILE
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><span class="pill-dot"></span>HTML5 / CSS3</span>
+                <span class="skill-pill"><span class="pill-dot"></span>JavaScript / TypeScript</span>
+                <span class="skill-pill"><span class="pill-dot"></span>React 19</span>
+                <span class="skill-pill"><span class="pill-dot"></span>WPF (XAML)</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Capacitor (Android)</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Tailwind CSS</span>
+              </div>
+            </div>
+
+            <!-- Herramientas & Entornos -->
+            <div class="skill-category">
+              <div class="category-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+                HERRAMIENTAS & FLUJO DE TRABAJO
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><span class="pill-dot"></span>Git & GitHub</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Visual Studio Code</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Visual Studio Community</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Inno Setup</span>
+                <span class="skill-pill"><span class="pill-dot"></span>Android SDK / Gradle</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         02 / FORMACIÓN ACADÉMICA
+         ========================================== -->
+    <section id="education" data-section class="container" aria-labelledby="education-title">
+      <p class="eyebrow" data-reveal><span class="section-number">02</span> / FORMACIÓN ACADÉMICA</p>
+
+      <div class="section-grid">
+        <div>
+          <h2 id="education-title" class="section-title" data-reveal>
+            Formación técnica<br><span>universitaria continua.</span>
+          </h2>
+        </div>
+
+        <div class="timeline" data-reveal>
+          
+          <!-- UTN -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Tecnicatura Universitaria en Programación</h3>
+              <span class="timeline-period">En curso</span>
+            </div>
+            <div class="timeline-institution">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              UTN — Universidad Tecnológica Nacional
+            </div>
+            <p class="timeline-description">
+              Formación integral y rigurosa en ingeniería de software, estructuras de datos avanzadas, algoritmia, programación orientada a objetos (POO), modelado relacional de bases de datos y desarrollo de sistemas.
+            </p>
+            <div class="timeline-highlights">
+              <div class="highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Desarrollo en C#, C++, Python y SQL con enfoque en arquitectura y rendimiento.</span>
+              </div>
+              <div class="highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Diseño de esquemas de bases de datos, normalización y consultas optimizadas.</span>
+              </div>
+              <div class="highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Control de versiones colaborativo y buenas prácticas de desarrollo en Git.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Escuela Técnica N° 1 de Monteros -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Técnico en Informática Profesional y Personal</h3>
+              <span class="timeline-period">Graduado</span>
+            </div>
+            <div class="timeline-institution">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Escuela Técnica N° 1 de Monteros
+            </div>
+            <p class="timeline-description">
+              Título secundario técnico con sólida base práctica y teórica en computación, lógica de programación, arquitectura de hardware, redes, sistemas operativos y soporte informático integral.
+            </p>
+            <div class="timeline-highlights">
+              <div class="highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Fundamentos de lógica algorítmica, programación estructurada y resolución de problemas.</span>
+              </div>
+              <div class="highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Arquitectura de computadoras, diagnóstico de hardware y mantenimiento de sistemas.</span>
+              </div>
+              <div class="highlight-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Configuración de redes de datos locales (LAN), seguridad informática y conectividad.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         03 / PROYECTOS DESTACADOS
+         ========================================== -->
+    <section id="projects" data-section class="container" aria-labelledby="projects-title">
+      <p class="eyebrow" data-reveal><span class="section-number">03</span> / PROYECTOS</p>
+
+      <div class="section-grid">
+        <div>
+          <h2 id="projects-title" class="section-title" data-reveal>
+            Decisiones técnicas,<br><span>arquitectura y software real.</span>
+          </h2>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- PROYECTO 1: BUSCAPP / Media Player & Downloader en C# -->
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <div class="project-meta">
+                <span class="project-type">Software de Escritorio • Windows</span>
+                <h3 class="project-title">BUSCAPP (C# / .NET 8)</h3>
+              </div>
+              <span class="project-badge">Disponible en GitHub</span>
+            </div>
+
+            <p class="project-summary">
+              Aplicación de escritorio de alto rendimiento desarrollada en C# 12 y .NET 8 con interfaz moderna en WPF/XAML. Integra navegación web aislada mediante WebView2 (Chromium), extracción y descarga multimedia multihilo con yt-dlp, y procesamiento y conversión a audio MP3 de 320 kbps mediante multiplexación con FFmpeg.
+            </p>
+
+            <div class="project-architecture">
+              <div class="architecture-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                Arquitectura & Detalles Técnicos
+              </div>
+              <div class="architecture-grid">
+                <div class="arch-item">
+                  <span class="arch-label">UI / UX</span>
+                  <span class="arch-desc">WPF con aceleración por hardware, animaciones Storyboard y soporte dinámico de temas claro/oscuro.</span>
+                </div>
+                <div class="arch-item">
+                  <span class="arch-label">Motor Web & Media</span>
+                  <span class="arch-desc">Microsoft WebView2 + backend yt-dlp y FFmpeg para stream multiplexing y SkiaSharp para gráficos.</span>
+                </div>
+                <div class="arch-item">
+                  <span class="arch-label">Persistencia & Packaging</span>
+                  <span class="arch-desc">Configuración en JSON de alta velocidad (System.Text.Json) e instalador x64 generado con Inno Setup 6.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">C# 12</span>
+              <span class="tech-tag">.NET 8.0</span>
+              <span class="tech-tag">WPF (XAML)</span>
+              <span class="tech-tag">WebView2</span>
+              <span class="tech-tag">yt-dlp</span>
+              <span class="tech-tag">FFmpeg</span>
+              <span class="tech-tag">SkiaSharp</span>
+              <span class="tech-tag">Inno Setup</span>
+            </div>
+
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/tomaslobotup/BUSCAPP" target="_blank" rel="noopener noreferrer">
+                Ver en GitHub
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROYECTO 2: LaminaFacil -->
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <div class="project-meta">
+                <span class="project-type">App Móvil • Android & Web</span>
+                <h3 class="project-title">LaminaFacil</h3>
+              </div>
+              <span class="project-badge upcoming">Próximamente en Google Play</span>
+            </div>
+
+            <p class="project-summary">
+              Aplicación móvil orientada a la creación y diagramación de láminas escolares y posters de gran escala divididos en hojas A4 estándar. Cuenta con motor gráfico propio sobre HTML5 Canvas para corte de precisión con marcos y ensamble tipo Posteriza, y compilación nativa Android mediante Capacitor.
+            </p>
+
+            <div class="project-architecture">
+              <div class="architecture-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                Arquitectura & Detalles Técnicos
+              </div>
+              <div class="architecture-grid">
+                <div class="arch-item">
+                  <span class="arch-label">Frontend & Motor Gráfico</span>
+                  <span class="arch-desc">React 19 tipado con TypeScript, Tailwind CSS y motor HTML5 Canvas para renderizar cortes e ingletes a 45°.</span>
+                </div>
+                <div class="arch-item">
+                  <span class="arch-label">Generación de Documentos</span>
+                  <span class="arch-desc">jsPDF para exportación vectorial multipágina con márgenes calibrados y guías visuales de corte.</span>
+                </div>
+                <div class="arch-item">
+                  <span class="arch-label">Ecosistema Android</span>
+                  <span class="arch-desc">Capacitor 8 (Filesystem & Share), compilación AAB con Gradle, OpenJDK 21 y firmado digital SHA-256 (Keytool).</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Capacitor 8</span>
+              <span class="tech-tag">Android SDK</span>
+              <span class="tech-tag">HTML5 Canvas</span>
+              <span class="tech-tag">jsPDF</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+
+            <div class="project-links">
+              <span class="project-link secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Preparando lanzamiento en Play Store
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         04 / CONTACTO
+         ========================================== -->
+    <section id="contact" data-section class="container contact-section" aria-labelledby="contact-title">
+      <p class="eyebrow" data-reveal><span class="section-number">04</span> / CONTACTO</p>
+
+      <div class="contact-card" data-reveal>
+        <div>
+          <h2 id="contact-title" class="contact-heading">
+            El siguiente proyecto<br>comienza con una<br><span class="gradient-animated-text">conversación.</span>
+          </h2>
+          <p class="contact-sub">
+            Estoy buscando oportunidades para sumar valor en proyectos de software, colaborar en equipo y seguir desarrollando soluciones tecnológicas.
+          </p>
+        </div>
+
+        <div class="contact-action-box">
+          <span class="mono" style="color: var(--text-dim);">¿HABLÁMOS?</span>
+          
+          <a class="contact-email-link" href="mailto:joaquintomaslobo@gmail.com">
+            joaquintomaslobo@gmail.com
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 18 18 6M6 6h12v12"/>
+            </svg>
+          </a>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <a class="button button-primary" href="mailto:joaquintomaslobo@gmail.com">
+              Enviar correo
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 12h15m-6-6 6 6-6 6"/>
+              </svg>
+            </a>
+
+            <a class="button button-secondary" href="https://github.com/tomaslobotup" target="_blank" rel="noopener noreferrer">
+              GitHub
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 18 18 6M6 6h12v12"/>
+              </svg>
+            </a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/joaquintomaslobo/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 18 18 6M6 6h12v12"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer container">
+    <p class="footer-signature">© 2026 Joaquín Tomás Lobo — tl.</p>
+    <p style="color: var(--text-dim); font-size: 0.85rem;">Software bien diseñado, de punta a punta.</p>
+    <div class="social-links">
+      <a href="https://github.com/tomaslobotup" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/joaquintomaslobo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:joaquintomaslobo@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Lógica e interactividad -->
+  <script src="main.js"></script>
+</body>
+</html>
